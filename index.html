@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>D3 Test</title>
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+</head>
+<body>
+  <h1>Hello, D3 Project!</h1>
+
+  <svg width="300" height="100"></svg>
+
+  <script>
+    // Select the SVG element
+    const svg = d3.select("svg");
+
+    // Append a circle
+    svg.append("circle")
+      .attr("cx", 150)
+      .attr("cy", 50)
+      .attr("r", 40)
+      .style("fill", "steelblue");
+
+    // Append some text
+    svg.append("text")
+      .attr("x", 150)
+      .attr("y", 55)
+      .attr("text-anchor", "middle")
+      .style("fill", "white")
+      .style("font-family", "Arial")
+      .style("font-size", "18px")
+      .text("D3 is working!");
+  </script>
+</body>
+</html>
+
